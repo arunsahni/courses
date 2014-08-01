@@ -1,0 +1,16 @@
+{
+  "name": "sahni",
+  "version": "0.0.0",
+  "authors": [
+    "arunsahni <arun_sahni@ymail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "toastr": "~2.0.3",
+    "angular": "~1.2.21",
+    "angular-resource": "~1.2.21",
+    "angular-route": "~1.2.21"
+  }
+}
