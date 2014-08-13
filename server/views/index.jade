@@ -1,5 +1,14 @@
 extends ../includes/layout
 block main-content
+    .navbar.navbar-inverse.navbar-fixed-top
+        .container
+            .navbar-header
+                a.navbar-brand(href="/") MultiTech
+                    h6 -Exterme Tech Training
+            .navbar-collapse.collapse
+                ul.nav.navbar-nav
+                    li
+                        a.navbar-brand(href="/") Home
     section.content
         div(ng-view)
     h2= mongoMessage
