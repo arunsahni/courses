@@ -12,3 +12,8 @@ footer
   padding-right 15px
   p
     border-top 1px solid #d9edf7
+.navbar-form
+  .form-group
+    margin-left 10px
+  button
+    margin-left 10px
