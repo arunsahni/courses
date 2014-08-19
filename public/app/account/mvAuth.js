@@ -12,6 +12,16 @@ angular.module('app').factory('mvAuth', function($http, mvIdentity, $q){
                 }
             });
             return promise.promise;
+        },
+
+        logoutUser: function(){
+            var pp = $q.defer();
+            $http.post('/logout',{logout: true}).then(function(){
+                mvIdentity.currentUser = undefined;
+                pp.resolve();
+
+            });
+            return pp.promise;
         }
 
     }
