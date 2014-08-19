@@ -8,4 +8,21 @@ module.exports = function(config){
         console.log("Mongodb is connected");
     });
 
+    var userSchema = mongoose.Schema({
+        firstName: String,
+        lastName: String,
+        username: String
+    });
+
+    var User = mongoose.model('User',userSchema);
+
+    User.find({}).exec(function(err, collection){
+        if(collection.length == 0){
+            User.create({firstName: 'arun',lastName: 'sahni',username: 'sahni'});
+            User.create({firstName: 'pink',lastName: 'hand',username: 'pinkhand'});
+        } else {
+            console.log("collection",collection);
+        }
+    })
+
 }
