@@ -5,6 +5,7 @@ angular.module('app').controller('mvNavbarLoginCtrl',function($scope, $http, mvI
     mvAuth.authenticateUser(username,password).then(function(success){
         if(success){
             mvnotifier.notify('Login successfully');
+            $location.path('/');
         } else{
             mvnotifier.notify('Incorrect username');
         }

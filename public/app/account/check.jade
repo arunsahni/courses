@@ -1,0 +1,24 @@
+.container
+    .well
+        form.form-horizontal(name="saveForm")
+            fieldset
+                legend Test Code
+                .form-group
+                    label.col-md-2.control-label(for="name") Name
+                    .col-md-10
+                        input.form-control(name="name",type="text",placeholder="Name",ng-model="name",required)
+
+                .form-group
+                    label.col-md-2.control-label(for="address") Address
+                    .col-md-10
+                        input.form-control(name="address",type="text",placeholder="Address",ng-model="address",required)
+                .form-group
+                    .col-md-10.col-md-offset-2
+                        .pull-right
+                        button.btn.btn-primary(ng-click="saveform()",ng-disabled="saveForm.$invalid") Save
+                        | &nbsp;
+                        a.btn.btn-primary(href="/") Cancel
+        .row
+            template
+
+
